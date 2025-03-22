@@ -4,63 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Coffee House</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
     <header>
-        <div class="logo">☕ Indian Coffee House</div>
+        <h1>☕ Indian Coffee House</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" class="login-btn">Login</a></li>
+                <li><a href="#login">Login</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home" class="hero">
-        <h1>Experience the True Taste of Indian Coffee</h1>
-        <p>Freshly brewed, specially for you.</p>
-        <a href="#menu" class="btn">Explore Menu</a>
+
+    <section id="home">
+        <h2>Welcome to Indian Coffee House</h2>
+        <p>Enjoy the best Indian coffee, freshly brewed just for you.</p>
+        <button id="explore-menu">Explore Menu</button>
     </section>
+
     <section id="menu">
         <h2>Our Special Menu</h2>
-        <div class="menu-items">
-            <div class="item">
-                <img src="espresso.jpg" alt="Espresso">
-                <h3>Espresso</h3>
-                <p>₹120</p>
-            </div>
-            <div class="item">
-                <img src="filter-coffee.jpg" alt="Filter Coffee">
-                <h3>Filter Coffee</h3>
-                <p>₹90</p>
-            </div>
-            <div class="item">
-                <img src="cold-coffee.jpg" alt="Cold Coffee">
-                <h3>Cold Coffee</h3>
-                <p>₹150</p>
-            </div>
+        <div class="menu-item">
+            <h3>☕ Espresso</h3>
+            <p>Rich and strong espresso coffee.</p>
+            <p><b>₹120</b></p>
+            <button class="order-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <h3>☕ Filter Coffee</h3>
+            <p>South Indian traditional filter coffee.</p>
+            <p><b>₹90</b></p>
+            <button class="order-btn">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <h3>🥤 Cold Coffee</h3>
+            <p>Chilled and creamy cold coffee.</p>
+            <p><b>₹150</b></p>
+            <button class="order-btn">Order Now</button>
         </div>
     </section>
+
     <section id="about">
         <h2>About Us</h2>
-        <p>Serving authentic Indian coffee with rich flavors and a legacy of excellence.</p>
+        <p>Indian Coffee House is known for its authentic taste and rich coffee blends.</p>
     </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: support@indiancoffee.com</p>
-        <p>Phone: +91 98765 43210</p>
+        <p>Phone: +91 9876543210</p>
     </section>
-    <section id="login" class="login-form">
+
+    <section id="login">
         <h2>Login</h2>
-        <form onsubmit="return login()">
-            <input type="text" placeholder="Email or Phone Number" required>
-            <input type="password" placeholder="Password" required>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
+        <p id="login-message"></p>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
