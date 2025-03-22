@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Indian Coffee House</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Best Coffee Experience</h2>
+        <p>Enjoy the rich taste of authentic Indian coffee.</p>
+        <button onclick="orderNow()">Order Now</button>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">Espresso - ₹120</div>
+        <div class="menu-item">Cappuccino - ₹150</div>
+        <div class="menu-item">Filter Coffee - ₹100</div>
+        <div class="menu-item">Cold Coffee - ₹130</div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Indian Coffee House serves the finest traditional and modern coffee blends with an Indian touch.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@indiancoffee.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Indian Coffee House. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f1e5;
+        text-align: center;
+    }
+    header {
+        background-color: #6f4e37;
+        color: white;
+        padding: 15px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    section {
+        padding: 20px;
+    }
+    .menu-item {
+        background: #c4a484;
+        color: white;
+        padding: 10px;
+        margin: 10px auto;
+        width: 50%;
+        border-radius: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background: #6f4e37;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover {
+        background: #553c29;
+    }
+</style>
+
+<script>
+    function orderNow() {
+        alert("Thank you for your order! Our team will contact you soon.");
+    }
+</script>
